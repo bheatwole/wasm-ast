@@ -12,6 +12,7 @@ use std::mem::discriminant;
 /// The builder performs minimal validation when using the `add_*` family of methods.
 /// The builder validates that the added element would not exceed the maximum size of a u32.
 /// No other validations are performed.
+#[derive(Clone, Debug, PartialEq)]
 pub struct ModuleBuilder {
     module: Module,
 }
